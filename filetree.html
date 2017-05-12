@@ -1,0 +1,55 @@
+<html>
+<style>
+.filetree {
+    background: #fff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24), 0 0 2px rgba(0, 0, 0, 0.12);
+    border: 4px solid #ECEFF1;
+    margin: 0 0 24px 0;
+    padding: 24px
+}
+.filetree .file {
+    display: block;
+    font-family: Monaco, "Lucida Console", monospace;
+    line-height: 32px;
+    color: #546E7A
+}
+.filetree .children {
+    padding-left: 24px;
+    position: relative;
+    overflow: hidden
+}
+.filetree .children .file {
+    position: relative
+}
+.filetree .children .file:before {
+    content: '';
+    left: -18px;
+    bottom: 16px;
+    width: 16px;
+    height: 9999px;
+    position: absolute;
+    border-width: 0 0 1px 1px;
+    border-style: solid;
+    border-color: #CFD8DC;
+    border-radius: 0 0 0 3px
+}
+</style>
+<body>
+<div class="filetree">
+  <div class="file">parent</div>
+  <div class="children">
+  	<div class="file">child 1</div>
+  	<div class="file">child 2</div>
+    <div class="children">
+        <div class="file">grandchild 1</div>
+        <div class="file">grandchild 1</div>
+        <div class="children">
+            <div class="file">grand grandchild 1</div>
+            <div class="file">grand grandchild 2</div>
+        </div>
+    </div>
+  </div>
+</div>
+<small><a href="https://angular.io/docs/ts/latest/guide/style-guide.html">https://angular.io/docs/ts/latest/guide/style-guide.html</a></small>
+</body>
+</html>
